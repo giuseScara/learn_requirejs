@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <tiitle>Introduction to RequireJS</title>
+  </head>
+  <body>
+    <script data-main="config" src="require.js"></script>
+
+    <script type="text/javascript">
+      alert('before load config');
+      require(['config'], function() { //require config file
+        require(['customScripts/jqueryFile']); //I don't need to specify js/ becuase js is baseUrl
+      });
+    </script>
+
+  </body>
+</html>
