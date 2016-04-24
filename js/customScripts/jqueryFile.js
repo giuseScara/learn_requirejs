@@ -1,5 +1,8 @@
-define(['jquery','angular'], function($) { //use jquery e angular defined in require.config
-  $('body').html('Hello, ftom the other side!');
+define(['jquery','methods'], function($, methods) { //use jquery e angular defined in require.config
+
+  $('#clickMe').click(function() {
+    methods.showAlert("I was clicked!");
+  });
 
   //angular.module
 });

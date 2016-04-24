@@ -14,7 +14,8 @@ require.config({
     d3: [
       'https://d3js.org/d3.v3.min',
       'lib/d3/d3.min'
-    ]
+    ],
+    methods: 'customScripts/methods'
   }
 
 });
