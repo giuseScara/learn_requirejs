@@ -2,6 +2,15 @@
 
 require.config({
   baseUrl: 'js',
+  shim: {
+    methods: {
+      deps: ['jquery'],
+      export: 'methods'
+    },
+    jquery: {
+      export: '$'
+    }
+  },
   paths: {
     angular: [
       'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min', //first load this else (whìtout .js)
@@ -15,7 +24,7 @@ require.config({
       'https://d3js.org/d3.v3.min',
       'lib/d3/d3.min'
     ],
-    methods: 'customScripts/methods'
+    methods: 'customScripts/methods' //this has been defined
   }
 
 });

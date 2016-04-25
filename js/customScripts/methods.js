@@ -1,5 +1,5 @@
 
-define(['jquery'], Methods());
+define(Methods($));
 
 function Methods($) {
   var methods = {};
