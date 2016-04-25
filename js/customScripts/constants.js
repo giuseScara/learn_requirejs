@@ -1,5 +1,3 @@
-define(function() {
-  return {
+define({
     size: '10'
-  }
 });
