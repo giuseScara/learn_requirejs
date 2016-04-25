@@ -23,8 +23,8 @@ require.config({
       'https://d3js.org/d3.v3.min',
       'lib/d3/d3.min'
     ],
-    methods: 'customScripts/methods', //this has been defined,
-    constants: 'customScripts/constants'
+    methods: 'app/customScripts/methods', //this has been defined,
+    constants: 'app/customScripts/constants'
   }
 
 });

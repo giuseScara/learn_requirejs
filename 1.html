@@ -5,12 +5,11 @@
   </head>
   <body>
     <button id="clickMe"> Asynchronous Module Definition</button>
-    <script data-main="js/config" src="require.js"></script>
+    <script data-main="js/config" src="js/require.js"></script>
 
     <script type="text/javascript">
-      alert('before load config');
       require(['config'], function() { //require config file
-        require(['customScripts/jqueryFile']); //I don't need to specify js/ becuase js is baseUrl 
+        require(['app/customScripts/jqueryFile']); //I don't need to specify js/ becuase js is baseUrl 
         //use jqueryFile
       });
     </script>
