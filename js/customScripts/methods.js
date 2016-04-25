@@ -1,11 +1,12 @@
 
-define(Methods($));
+define(['jquery','constants'], Methods); //Metods not Methods()
 
-function Methods($) {
+function Methods($, constants) {
+
   var methods = {};
 
   methods.changeHTML = function (arg) {
-    $('body').html(arg);
+    $('body').html(arg +" " + constants.size);
   }
 
   methods.showAlert = function (arg) {
