@@ -2,6 +2,11 @@
 
 require.config({
   baseUrl: 'js',
+  map: {
+    '*': {
+      'css': 'lib/require-css/css'
+    }
+  },
   shim: {
     methods: {
       export: 'methods'
@@ -11,6 +16,7 @@ require.config({
     }
   },
   paths: {
+    mystyle: '../css',
     angular: [
       'https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min', //first load this else (whìtout .js)
       'lib/angular.min' //load this
